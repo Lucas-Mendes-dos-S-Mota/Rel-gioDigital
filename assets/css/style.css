@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Saira+Extra+Condensed:wght@900&family=Sedgwick+Ave+Display&display=swap');
+
+/*esse elemento seleciona todas as tegs*/
+*{      
+    margin: 0;                                    
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    height: 100vh;  /*Para cobrir a altura da tela inteira*/
+    background: linear-gradient(120deg, #6fc55a,#14dcb4) ;/*linear-gradientet permiter ter duas cores fica num estilo degrade*/
+    display: flex;/*para alinhar os elementos no centro*/
+    align-items: center; /*serve para centralizar*/
+    justify-content: center;/*centralizar tambem*/
+}
+
+.relogio{
+    display: flex;/*para os elementos ficarem um do lado do outro e centralizados*/
+    align-items: center;
+    justify-content: space-around;/*dar um espaçamento*/
+    height: 250px ;/*altura*/
+    width: 750px;/*lagura*/
+    background: transparent;
+    border-radius: 5px;
+    box-shadow: 1px 9px 11px rgba(0, 0 ,0, 0.5);
+}
+
+.relogio div{
+    height: 150px; /*altura*/
+    width: 150px; /*largura*/
+    display: flex;
+    flex-direction: column;/*serve para colocar os elementos um em baixo do outro */
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: rgba(5, 5, 5, 0.9);
+    box-shadow: 5px 5px 15px rgba(0, 0 ,0, 0.7);
+    border-radius: 7px ;/*serve para deixar arredondado*/
+    letter-spacing: 3px;/*espaçamentos da letra*/
+}
+
+.relogio span{
+    font-weight: bolder; /*Vai engroçar um pouco a fonto*/
+    font-size: 60px;
+}
+
+.relogio span.tempo{
+    font-size: 20px;
+}
